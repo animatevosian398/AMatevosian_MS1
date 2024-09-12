@@ -35,11 +35,6 @@ Exploring the Smithsonian’s material and history made me wonder where specimen
 - What categories do those materials belong to (botany, fossils/paleontology, archival material, seeds)?
 - Which expeditions are less focused on or underrepresented?
 - From which expedition does the Smithsonian hold the most archival material?
-A micro-exploration could zoom in within a category to see the biodiversity of plants collected on an expedition. The quantitative dataset includes the number of artifacts in object types like “plants” for a given expedition. For example, the notable U.S. Exploring Expedition from 1838 yielded:
-- 284 results for NMNH Vertebrate Zoology - Birds
-- 369 for NMNH Invertebrate Zoology Dept
-- 6 for Herpetology
-- 1 in Mammals
-- 8 in Botany
 
+A micro-exploration could zoom in within a category to see the biodiversity of plants collected on an expedition. The quantitative dataset includes the number of artifacts in object types like “plants” for a given expedition. For example, the notable U.S. Exploring Expedition from 1838 yielded: 284 results for NMNH Vertebrate Zoology - Birds, 369 for NMNH Invertebrate Zoology Dept, 6 for Herpetology, 1 in Mammals, and 8 in Botany.
 A stacked bar chart will display the diversity of material that the Smithsonian collected around each expedition and the contributions these expeditions made. The bar heights will show the number of artifacts in each category, allowing for comparisons among expeditions. An additional view could display the geographical routes and distribution of the expeditions, showing where teams traveled and what they brought back.
