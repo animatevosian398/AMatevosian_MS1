@@ -10,6 +10,7 @@ The Smithsonian has about 16,000 primary type specimens of foraminifera (and ove
 Forams are split into two groups – benthic and planktonic – depending on their ocean depth. Some questions I want to explore are: 
 - What is the proportion of benthic to planktonic species in the collection at the Smithsonian?
 - What is the distribution of species represented across the different museum units?
+  
 With this visualization, I aim to quantify the specimen types across the Smithsonian units and by category (benthic vs. planktonic) to convey the richness of this collection. Bands in the outer ring will show the diversity of species type within each unit (NMNH Education & Outreach, Invertebrate Zoology Dept, and Paleobiology Dept) and visualize their locations within the institution.
 The quantitative dataset will include the number of objects and fossils/microslides of different foram types in the collections, as well as the number within each museum unit. I am using a sunburst chart to display this information because it breaks down categories effectively, and I can expand the rings to include more specific data points (like the number of species types). The data quality is high, containing all taxonomic information. I will need to join this dataset with another one that contains planktonic and benthic information for each specimen in the Smithsonian collection. Approximately 7,000 results are returned when searching "foraminifera" in the SI API’s discover database preview.
 
