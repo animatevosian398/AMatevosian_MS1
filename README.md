@@ -1,6 +1,6 @@
 ## MS 1
 ##Sketches
-[Sketches_pdf.pdf](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
+[Link to pdf of images](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
 
 
 # Foraminifera (“Forams”) at the Smithsonian: Visualizing the World’s Largest Foram Collection
