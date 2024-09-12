@@ -3,7 +3,7 @@
 [Link to pdf of images](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
 
 
-## Foraminifera (“Forams”) at the Smithsonian: Visualizing the World’s Largest Foram Collection
+## 1- Foraminifera (“Forams”) at the Smithsonian: Visualizing the World’s Largest Foram Collection
 
 The Smithsonian has about 16,000 primary type specimens of foraminifera (and over 200,000 secondary types) serving as the world’s largest repository, with the Cushman Collection being the most notable. Foraminifera (“forams” for short) are microfossils storing incredible amounts of data. Their shells tell us about past ocean conditions, from temperature to acidity and salinity. 
 
@@ -16,7 +16,7 @@ The quantitative dataset will include the number of objects and fossils/microsli
 
 ---
 
-## Foraminifera and Time: Temporal Distribution of the Smithsonian’s Foram Collection
+## 2- Foraminifera and Time: Temporal Distribution of the Smithsonian’s Foram Collection
 
 Using the same dataset of forams at the Smithsonian (or possibly narrowing the scope to one collection like the Cushman Collection), I am charting key foraminifera species on a geologic timescale. These species have known ages, determined by the sediment they were found in and other dating methods. By linking these species in the Smithsonian’s repository to their known ages, we can place them on a timeline.
 A timeline chart was chosen because it provides a clear picture of foram species and their ages on a geologic scale. The species’ age ranges will be represented by horizontal lines, showing when those species appeared and disappeared over time. The questions I want to explore include:
@@ -28,7 +28,7 @@ The dataset remains the same, but here, we focus on the Paleobiology unit, which
 
 ---
 
-## Exploring and Quantifying Expeditions
+## 3- Exploring and Quantifying Expeditions
 
 Exploring the Smithsonian’s material and history made me wonder where specimens like corals or fossils came from. Here, I investigate the following questions:
 - Which scientific expeditions yielded the most specimens, artifacts, and records?
