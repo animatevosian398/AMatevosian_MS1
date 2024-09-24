@@ -1,0 +1,390 @@
+[
+    [
+        "G. D. Hanna",
+        {
+            "count": 101,
+            "dates": [
+                "May 1916"
+            ]
+        }
+    ],
+    [
+        "Northwest Coast Pelagic Expedition",
+        {
+            "count": 76,
+            "dates": [
+                "19 Feb 1952",
+                "10 Mar 1952",
+                "16 Apr 1952",
+                "26 Mar 1952",
+                "2 Apr 1952",
+                "11 Apr 1952",
+                "9 Mar 1952",
+                "15 Apr 1982",
+                "3 Apr 1952",
+                "15 Apr 1952",
+                "12 Apr 1952",
+                "4 Apr 1952",
+                "13 Mar 1952",
+                "15 Jun 1952",
+                "22 Jun 1952",
+                "7 May 1952",
+                "23 May 1952",
+                "28 Apr 1952",
+                "24 Apr 1952",
+                "27 Mar 1952",
+                "23 Apr 1952",
+                "22 Mar 1952",
+                "23 Mar 1952",
+                "11 Jun 1952",
+                "21 Mar 1952"
+            ]
+        }
+    ],
+    [
+        "M. R. Malinow",
+        {
+            "count": 47,
+            "dates": [
+                "Aug 1964"
+            ]
+        }
+    ],
+    [
+        "W. D. Crabb",
+        {
+            "count": 41,
+            "dates": [
+                "19 Feb 1952",
+                "10 Mar 1952",
+                "16 Apr 1952",
+                "26 Mar 1952",
+                "2 Apr 1952",
+                "9 Mar 1952",
+                "3 Apr 1952",
+                "15 Apr 1952",
+                "4 Apr 1952",
+                "13 Mar 1952",
+                "11 Apr 1952",
+                "24 Apr 1952",
+                "12 Apr 1952",
+                "23 Apr 1952",
+                "22 Mar 1952",
+                "27 Mar 1952",
+                "23 Mar 1952",
+                "21 Mar 1952"
+            ]
+        }
+    ],
+    [
+        "Smithsonian-Chrysler Expedition",
+        {
+            "count": 21,
+            "dates": [
+                "",
+                "23 Nov 1926",
+                "24 Dec 1926",
+                "30 Oct 1926",
+                "4 Nov 1926",
+                "21 Dec 1926",
+                "25 Feb 1927",
+                "21 Dec 1940",
+                "23 Dec 1926",
+                "8 Feb 1927",
+                "15 Feb 1937",
+                "19 Feb 1929",
+                "13 Jan 1927",
+                "3 Mar 1927",
+                "24 May 1934",
+                "10 Jul 1933",
+                "14 Feb 1927",
+                "12 Dec 1926",
+                "20 Nov 1926",
+                "Jan 1927"
+            ]
+        }
+    ],
+    [
+        "J. I. Manzer",
+        {
+            "count": 20,
+            "dates": [
+                "11 Apr 1952",
+                "16 Apr 1952",
+                "15 Apr 1982",
+                "12 Apr 1952",
+                "23 May 1952",
+                "26 Mar 1952",
+                "27 Mar 1952",
+                "15 Apr 1952"
+            ]
+        }
+    ],
+    [
+        "Pacific Raider",
+        {
+            "count": 13,
+            "dates": [
+                "15 Jun 1952",
+                "22 Jun 1952",
+                "11 Jun 1952"
+            ]
+        }
+    ],
+    [
+        "E. Heller",
+        {
+            "count": 10,
+            "dates": [
+                "18 Apr 1911",
+                "28 Oct 1915",
+                "20 Jul 1915",
+                "14 Apr 1915",
+                "5 May 1915",
+                "8 Jun 1915",
+                "29 Jul 1915",
+                "14 May 1915",
+                "28 May 1915",
+                "15 May 1915"
+            ]
+        }
+    ],
+    [
+        "H. E. Anthony",
+        {
+            "count": 10,
+            "dates": [
+                "13 Apr 1911",
+                "11 Apr 1911",
+                "3 Apr 1911",
+                "14 Apr 1911"
+            ]
+        }
+    ],
+    [
+        "United States Exploring Expedition",
+        {
+            "count": 9,
+            "dates": [
+                "",
+                "15 Jul 1841",
+                "12 Feb 1839",
+                "1842",
+                "12 Feb 1841",
+                "12 Jun ----"
+            ]
+        }
+    ],
+    [
+        "Vega Expedition",
+        {
+            "count": 6,
+            "dates": [
+                "1879",
+                "Aug 1879"
+            ]
+        }
+    ],
+    [
+        "A. H. Howell",
+        {
+            "count": 6,
+            "dates": [
+                "18 Apr 1928",
+                "8 May 1928",
+                "7 May 1928",
+                "9 May 1928",
+                "19 Apr 1928",
+                "10 May 1928"
+            ]
+        }
+    ],
+    [
+        "Pinchot South Sea Expedition",
+        {
+            "count": 5,
+            "dates": [
+                "3 Apr 1929",
+                "26 May 1929",
+                "21 Jul 1929",
+                "15 Aug 1929",
+                "11 Jun 1929"
+            ]
+        }
+    ],
+    [
+        "Greenland Expeditions",
+        {
+            "count": 4,
+            "dates": [
+                "1899",
+                "1871",
+                "1883"
+            ]
+        }
+    ],
+    [
+        "Sofia Expedition",
+        {
+            "count": 2,
+            "dates": [
+                "1883"
+            ]
+        }
+    ],
+    [
+        "Eugenie Expedition",
+        {
+            "count": 2,
+            "dates": [
+                "11 Feb 1852",
+                "25 Feb 1852"
+            ]
+        }
+    ],
+    [
+        "Ford Wilke",
+        {
+            "count": 2,
+            "dates": [
+                "7 May 1952",
+                "28 Apr 1952"
+            ]
+        }
+    ],
+    [
+        "Hancock 1936 Scientific Expedition 1936",
+        {
+            "count": 1,
+            "dates": [
+                "1938"
+            ]
+        }
+    ],
+    [
+        "San Diego Zoo",
+        {
+            "count": 1,
+            "dates": [
+                "1938"
+            ]
+        }
+    ],
+    [
+        "Smithsonian African Expedition",
+        {
+            "count": 1,
+            "dates": [
+                ""
+            ]
+        }
+    ],
+    [
+        "Ziegler Polar Expedition",
+        {
+            "count": 1,
+            "dates": [
+                "14 Aug 1902"
+            ]
+        }
+    ],
+    [
+        "R. S. Sturgis",
+        {
+            "count": 1,
+            "dates": [
+                "23 Sep 1937"
+            ]
+        }
+    ],
+    [
+        "Stanley P. Young Expedition",
+        {
+            "count": 1,
+            "dates": [
+                "23 Sep 1937"
+            ]
+        }
+    ],
+    [
+        "U. S. Exploring Expedition",
+        {
+            "count": 1,
+            "dates": [
+                "-- -- 18--"
+            ]
+        }
+    ],
+    [
+        "C. S. McCarthy",
+        {
+            "count": 1,
+            "dates": [
+                "30 Aug 1859"
+            ]
+        }
+    ],
+    [
+        "H. Weaver",
+        {
+            "count": 1,
+            "dates": [
+                "22 Nov 1948"
+            ]
+        }
+    ],
+    [
+        "R. Mack",
+        {
+            "count": 1,
+            "dates": [
+                "22 Nov 1948"
+            ]
+        }
+    ],
+    [
+        "F. Harper",
+        {
+            "count": 1,
+            "dates": [
+                "30 Sep 1953"
+            ]
+        }
+    ],
+    [
+        "F. R. Wulsin",
+        {
+            "count": 1,
+            "dates": [
+                "Apr 1924"
+            ]
+        }
+    ],
+    [
+        "E. C. Erdis",
+        {
+            "count": 1,
+            "dates": [
+                "22 Dec 1914"
+            ]
+        }
+    ],
+    [
+        "H. G. Deignan",
+        {
+            "count": 1,
+            "dates": [
+                "12 May 1937"
+            ]
+        }
+    ],
+    [
+        "L. Stejneger",
+        {
+            "count": 1,
+            "dates": [
+                "1895"
+            ]
+        }
+    ]
+]
