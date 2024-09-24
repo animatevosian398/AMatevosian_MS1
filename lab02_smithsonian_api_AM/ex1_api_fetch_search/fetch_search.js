@@ -2,13 +2,13 @@
 // check API documentation for search here: http://edan.si.edu/openaccess/apidocs/#api-search-search
 
 // put your API key here;
-const apiKey = "";  
+const apiKey = "tebnOCC4XmUJaQs1JIIJPWjTwOCe9EF4u8MREr9O";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 // Constructing the search query
-const search =  `"Expedition"`
+const search =  `"Virginia Amphibian And Reptile Distribution Survey"`
 
 //object_type:"specimen"
 //unit_code:""

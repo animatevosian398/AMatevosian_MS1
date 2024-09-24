@@ -2,7 +2,7 @@
 // check API documentation for terms here: http://edan.si.edu/openaccess/apidocs/#api-search-terms
 
 // put your API key here;
-const apiKey = "";  
+const apiKey = "KHek8Gh8zg6L25ElGiBacgS6qrRShUomAKkDvJk5";  
 
 // Access to terms by term category (I.e. online_media_type > Images)
 const termBaseURL = "https://api.si.edu/openaccess/api/v1.0/terms/";
@@ -22,7 +22,7 @@ function fetchTermsData(termCategory) {
     })
   }
 
-fetchTermsData("online_media_type")
+fetchTermsData("topic")
 
 /*
 Task: Play around with the different categories listed here:

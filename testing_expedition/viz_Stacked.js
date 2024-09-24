@@ -24,14 +24,14 @@ const jsonFiles = [
   "./expeditions_downloaded_arrays/data_USAP_object_1.json",
   // './expeditions_downloaded_arrays/data_PacificOceanBiologicalSurvey.json'
 ];
-function showTooltip(event, d) {
-  const year = getExpeditionYear(d.expedition); // Get the year based on the expedition name
-  tooltip
-    .style("visibility", "visible")
-    .html(`<strong>${d.expedition}</strong><br/>Year: ${year || "Unknown"}`) // Handle unknown years gracefully
-    .style("left", event.pageX + 5 + "px")
-    .style("top", event.pageY - 28 + "px");
-}
+// function showTooltip(event, d) {
+//   const year = getExpeditionYear(d.expedition); // Get the year based on the expedition name
+//   tooltip
+//     .style("visibility", "visible")
+//     .html(`<strong>${d.expedition}</strong><br/>Year: ${year || "Unknown"}`) // Handle unknown years gracefully
+//     .style("left", event.pageX + 5 + "px")
+//     .style("top", event.pageY - 28 + "px");
+// }
 
 function getExpeditionYear(expeditionName) {
   const expeditionYears = {
@@ -479,7 +479,8 @@ function createStackedBarChart(data) {
       d3.selectAll(`.bar-${sanitizeName(d.expedition)}`)
         .transition()
         .duration(200)
-        .attr("opacity", 0.6); // Adjust the opacity to lighten
+        .attr("opacity", 0.6) // Adjust the opacity to lighten
+        .style("cursor", "grab");
     })
     .on("mouseout", function (event, d) {
       // Reset the label's style
@@ -627,15 +628,15 @@ function createTimeline(data) {
     .attr("class", "expedition-point")
     .attr("cx", width / 2)
     .attr("cy", (d) => yScale(parseTime(d.year)))
-    .attr("r", 7)
+    .attr("r", 8)
     .attr("stroke", "#868585")
     .attr("fill", "white")
     .on("mouseover", (event, d) => {
-      tooltip
-        .style("visibility", "visible")
-        .html(`<strong>${d.expedition}</strong><br/>Year: ${d.year}`)
-        .style("left", event.pageX + 5 + "px")
-        .style("top", event.pageY - 28 + "px");
+      // tooltip
+      //   .style("visibility", "visible")
+      //   .html(`<strong>${d.expedition}</strong><br/>Year: ${d.year}`)
+      //   .style("left", event.pageX + 5 + "px")
+      //   .style("top", event.pageY - 28 + "px");
 
       d3.select(event.target).attr("fill", "#FAC015");
 
