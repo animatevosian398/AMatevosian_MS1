@@ -1,9 +1,11 @@
 .raleway-title {
   font-family: "Raleway", sans-serif;
+  /* font-size: 20px; */
   font-optical-sizing: auto;
   font-weight: 300;
   padding: 0;
   margin-left: 1%;
+  margin-top: 3%;
   /* font-style: normal; */
 }
 
@@ -11,7 +13,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-style: normal;
-  padding: 0;
+  padding: 0%;
   padding-left: 1%;
 }
 
@@ -57,10 +59,10 @@ body {
 body::before {
   content: "";
   position: fixed; /* Ensure the background covers the full page */
-  top: 0;
+  top: 100;
   left: -5%;
-  width: 110%;
-  height: 110%;
+  width: 120%;
+  height: 120%;
   background-image: url("./SIA_Map.jpg"); /* Your image URL */
   background-size: cover;
   background-position: center;
@@ -148,7 +150,7 @@ body::before {
 
 #card-container {
   position: absolute; /* Change from fixed to absolute */
-  top: 10px; /* Adjust this value to move the card down slightly */
+  top: 0px; /* Adjust this value to move the card down slightly */
   right: 10px; /* Keep it aligned to the right */
   max-height: 90vh; /* Ensure it doesn't exceed the viewport */
   z-index: 10000; /* Ensure it stays above other elements */
@@ -159,7 +161,7 @@ body::before {
   background: #fefefe;
   border: 1px solid rgb(214, 212, 212);
   padding: 15px; /* Adjust padding as needed */
-  padding-top: 30px; /* Adjust to ensure the close button is within the card */
+  padding-top: 10px; /* Adjust to ensure the close button is within the card */
   overflow-y: auto;
   max-height: 85vh; /* Adjust max-height to prevent it from being cut off */
 }
@@ -232,7 +234,8 @@ body::before {
   height: 100vh; /* Full height of the viewport */
   object-fit: cover; /* Crop the image to cover the viewport */
   object-position: center; /* Center the image */
-  transform: scaleX(-1); /* Flip the image horizontally */
+  transform: scaleX(-1);
+  /* Flip the image horizontally */
 }
 
 .image-heading {
@@ -256,16 +259,20 @@ body::before {
   position: absolute;
   bottom: 10px; /* Specify the bottom distance with a unit */
   right: 10px; /* Distance from the right */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.023
-  ); /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.09); /* Semi-transparent background */
   padding: 5px 10px;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   color: #333; /* Adjust the text color for contrast */
   border-radius: 5px;
   z-index: 10; /* Ensure it's above other elements */
+}
+.bar:hover {
+  cursor: grab;
+}
+
+#visualization-citation {
+  color: rgb(176, 176, 176);
+  font-family: inter;
+  font-weight: 100;
 }
