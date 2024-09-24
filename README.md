@@ -1,6 +1,21 @@
 ## MS 1
+#Prototype Images
+
+
+<img width="1409" alt="prototypeImage_3" src="https://github.com/user-attachments/assets/2805563c-06ee-4090-bf46-b01100722dbe">
+<img width="1329" alt="PrototypeImage_2" src="https://github.com/user-attachments/assets/eb2d3a67-e919-4975-a1c6-1d22b6e1c301">
+<img width="1393" alt="prototypeImage_1" src="https://github.com/user-attachments/assets/273370c1-5a60-4a7f-8d2b-e24a3f51453e">
+
+
+
+
+
 ## Sketches
 [Link to pdf of images](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
+
+
+
+
 
 
 ## 1- Foraminifera (“Forams”) at the Smithsonian: Visualizing the World’s Largest Foram Collection
