@@ -1,0 +1,9 @@
+# Quantifying the Yields of Exploration
+
+## Overview
+This project visualizes data from various scientific expeditions using an interactive stacked bar chart and timeline. It provides insights into the number of artifacts collected by different expeditions and categorizes them by Smithsonian unit codes. The visualization is designed to help understand the impact and contributions of each expedition to the museum’s collections.
+
+## Features
+- **Interactive Stacked Bar Chart**: Displays the top 10 expeditions based on artifact counts, with categories color-coded by Smithsonian units (e.g., Invertebrate, Botany, Mineral Science).
+- **Timeline Visualization**: Shows expedition years with hover effects, highlighting detailed information about each expedition.
+- **Image Card Viewer**: Clicking on a bar opens an image card with detailed descriptions and images associated with the selected expedition.
