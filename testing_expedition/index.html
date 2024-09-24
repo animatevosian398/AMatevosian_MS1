@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Major Studio 1 - Lab 2 - fetch search</title>
-</head>
-<body>
-  <input type="button" id="dwn-btn" value="download JSON"/>
-  <script src="fetch_search_dataset.js"></script>
-  <script src="download.js"></script>
-</body>
-</html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>     
+    <div id="image-container" class="image-container">
+      <h2 class="image-heading">Quantifying the Yields of Exploration</h2>
+      <img id="page-image" class="page-image" src="https://ids.si.edu/ids/iiif/SIA-MAH-897-000002/full/full/0/default.jpg" alt="Title Image" />
+      <div id="citation" class="citation">
+        Image Citation: Smithsonian Institution Archives, Acc. 11-006, Box 001, Image No. MAH-897 
+      </div>
+
+    </div>
+      <!-- <img id="page-image" class="page-image" src="https://ids.si.edu/ids/iiif/SIA-MAH-897-000002/full/full/0/default.jpg" alt="Title Image" /> -->
+  </div>
+  
+    <h1 class="raleway-title" id="title">Quantifying the Yields of Exploration</h1>
+    <h3 class="inter-subtitle" >As found in the Museum of Natural History collections</h3>
+             <!-- <img id="page-image" class="page-image" src="./SIA_Boat.jpg" alt="Black and white imgage of sailors on a Boat from Smithsonian Archive" /> -->
+    
+     <!-- <input type="button" id="dwn-btn" value="download JSON"/>  -->
+    <div id="title-container">
+      <!-- <img id="page-image" src="https://ids.si.edu/ids/iiif/SIA-MAH-897-000002/full/full/0/default.jpg" alt="Title Image" style= "max-width: 100%; height: auto;"/> -->
+  </div>
+</div>
+  <!-- <img id="page-image" src="  https://ids.si.edu/ids/manifest/SIA-SIA2012-3641" alt="Title Image" style= "max-width: 100%; height: auto;"/> -->
+    <!-- <input type="button" id="dwn-btn" value="download JSON"/> -->
+    <div id="visualization" style="display: flex; height: 100vh; position: relative;">
+      <div id="timeline-container" style="flex: 0 0 10%; height: 90%;">
+        <svg id="timeline" style="height: 100%;"></svg>
+      </div>
+      <div id="chart-container" style="flex: 1; height: 90%; position: relative;"> <!-- Reduced from 92% -->
+        <svg id="chart" style="height: 90%;"></svg> <!-- Reduced from 90% to make room for the legend -->
+        <svg id="legend" ></svg> <!-- Adjusted height to 15% -->
+      </div>
+      <div id="card-container" style="flex: 0 0 30%; height: 100%; position: relative;">
+        <div id="image-card" style="display:none;">
+            <button id="closeImageCard">X</button>
+            <h3 id="expedition-title"></h3>
+            <p id="expedition-description"></p>
+            <div id="image-content" class="image-grid"></div>
+            <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; z-index: 2000;">
+                <img id="modal-image" style="max-width: 90%; max-height: 90%;"/>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div id="tooltip" style="position: absolute; visibility: hidden; background: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 3px;"></div>
+</div>
+
+    
+    
+    <script src="viz_Stacked.js"></script>
+    <!-- <script src="download.js"></script>  -->
+  </body>
+  </html>
