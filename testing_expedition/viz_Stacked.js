@@ -94,7 +94,7 @@ function sanitizeName(name) {
 const expeditionImages = {
   "United States Exploring Expedition": {
     description:
-      "Objectives: The U.S. Exploring expedition (1838-1842) set out to conduct scientific research and exploration, map uncharted areas, collect specimens that were unkonwn to Western science, and gather scientific data across botany, zoology, geology, and ethnography. Under the leadership of Lieutenant Charles Wilkes, the U.S. Exploring Expedition was one of the first to confirm the existence of the Antarctic continent. It established the United States as a significant player in global exploration and scientific research during the 19th century.",
+      "The U.S. Exploring expedition (1838-1842) set out to conduct scientific research and exploration, map uncharted areas, collect specimens that were unkonwn to Western science, and gather scientific data across botany, zoology, geology, and ethnography. Under the leadership of Lieutenant Charles Wilkes, the U.S. Exploring Expedition was one of the first to confirm the existence of the Antarctic continent. It established the United States as a significant player in global exploration and scientific research during the 19th century.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m351b4295fcb5d440ba0b1e6b4e23066c3",
       "https://collections.nmnh.si.edu/media/?irn=14443814",
@@ -104,7 +104,7 @@ const expeditionImages = {
   },
   "United States Antarctic Program (USAP)": {
     description:
-      "Objectives: The United States Antarctic Program (USAP) was established in 1956 and is ongoing, supporting scientific research in Antarctica. The program's objectives include studying the unique ecosystems, climate, geology, and glaciology of Antarctica, as well as understanding its role in global climate systems. USAP facilitates research on ice cores to track climate history, wildlife studies, astronomical observations, and research on the Southern Ocean.",
+      "The United States Antarctic Program (USAP) was established in 1956 and is ongoing, supporting scientific research in Antarctica. The program's objectives include studying the unique ecosystems, climate, geology, and glaciology of Antarctica, as well as understanding its role in global climate systems. USAP facilitates research on ice cores to track climate history, wildlife studies, astronomical observations, and research on the Southern Ocean.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3afb2be27a6564539be5216bc4903f1b1",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m347ddaa8be3da4ef5944536f27fcc6298",
@@ -114,7 +114,7 @@ const expeditionImages = {
   },
   "Georges Bank Benthic Infauna Monitoring Program (BIMP)": {
     description:
-      "Objectives: The Georges Bank Benthic Infauna Monitoring Program (BIMP) (1981-1984) aimed to study the infaunal communities (organisms living within the seabed) of Georges Bank, a large elevated area of the seafloor off the coast of New England. The program sought to monitor and understand the ecological impacts of human activities, such as fishing and pollution, on benthic habitats, as well as natural changes over time. It provided valuable insights into the health and biodiversity of the seafloor ecosystem, contributing to the sustainable management of this important marine area.",
+      "The Georges Bank Benthic Infauna Monitoring Program (BIMP) (1981-1984) aimed to study the infaunal communities (organisms living within the seabed) of Georges Bank, a large elevated area of the seafloor off the coast of New England. The program sought to monitor and understand the ecological impacts of human activities, such as fishing and pollution, on benthic habitats, as well as natural changes over time. It provided valuable insights into the health and biodiversity of the seafloor ecosystem, contributing to the sustainable management of this important marine area.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m30fce46c48a204a6684292b21b841f5cc",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3567af3abd2b54262bb3a097ba8296b20",
@@ -124,7 +124,7 @@ const expeditionImages = {
   },
   "International Indian Ocean Expedition (IIOE)": {
     description:
-      "Objectives: The International Indian Ocean Expedition (IIOE) (1959 to 1965) aimed to explore and understand the Indian Ocean's diverse characteristics. It focused on studying ocean currents, monsoon systems, marine ecosystems, and geological features to provide a comprehensive understanding of this largely unexplored region. The expedition's multidisciplinary approach contributed significantly to oceanography by documenting marine biodiversity, understanding ocean circulation patterns, and advancing oceanographic research techniques, making it a landmark endeavor in marine science.",
+      "The International Indian Ocean Expedition (IIOE) (1959 to 1965) aimed to explore and understand the Indian Ocean's diverse characteristics. It focused on studying ocean currents, monsoon systems, marine ecosystems, and geological features to provide a comprehensive understanding of this largely unexplored region. The expedition's multidisciplinary approach contributed significantly to oceanography by documenting marine biodiversity, understanding ocean circulation patterns, and advancing oceanographic research techniques, making it a landmark endeavor in marine science.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3acaba9c826094e189904cef4a15cc3b8",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m30b5cd54324974a649a29b3e24796c309",
@@ -135,12 +135,12 @@ const expeditionImages = {
   },
   "New England Environmental Benchmark Program (NEEB)": {
     description:
-      "Objectives: The New England Environmental Benchmark Program (NEEB) took place in 1977 as part of a series of ecological benchmark studies conducted during the 70s to assess and monitor the marine and coastal environments in the New England region. These studies helped establish baseline data for understanding environmental changes over time.",
+      "The New England Environmental Benchmark Program (NEEB) took place in 1977 as part of a series of ecological benchmark studies conducted during the 70s to assess and monitor the marine and coastal environments in the New England region. These studies helped establish baseline data for understanding environmental changes over time.",
     imageUrls: ["", "", "", ""],
   },
   "Northwestern Pacific Expedition": {
     description:
-      "Objectives: The U.S. North Pacific Exploring Expedition (1853-1856), led by Captain Cadwalader Ringgold and later Lt. John Rodgers, aimed to explore the Bering Straits, North Pacific Ocean, and China Seas, with botanist Charles Wright collecting numerous plant and algae specimens. The expedition discovered new plant species, including seaweed varieties, and documented previously unknown plant relationships in Asia. This work contributed significantly to the formation of the U.S. National Herbarium in 1869.",
+      "The U.S. North Pacific Exploring Expedition (1853-1856), led by Captain Cadwalader Ringgold and later Lt. John Rodgers, aimed to explore the Bering Straits, North Pacific Ocean, and China Seas, with botanist Charles Wright collecting numerous plant and algae specimens. The expedition discovered new plant species, including seaweed varieties, and documented previously unknown plant relationships in Asia. This work contributed significantly to the formation of the U.S. National Herbarium in 1869.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m33e9a75d187a9497db46c98fe4c21e911",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3f4984a3d5a2345bd9582bd8b735e4b42",
@@ -150,12 +150,12 @@ const expeditionImages = {
   },
   "Ocean Acre Expedition": {
     description:
-      "Objectives: The Ocean Acre Expedition (1960s), was a multidisciplinary research initiative focused on studying the physical, chemical, and biological properties of the Sargasso Sea, located in the North Atlantic Ocean. Scientists aimed to better understand oceanographic processes, marine life diversity, and the interactions between different ocean layers, making it one of the earliest efforts to explore and document the complexities of an open-ocean ecosystem.",
+      "The Ocean Acre Expedition (1960s), was a multidisciplinary research initiative focused on studying the physical, chemical, and biological properties of the Sargasso Sea, located in the North Atlantic Ocean. Scientists aimed to better understand oceanographic processes, marine life diversity, and the interactions between different ocean layers, making it one of the earliest efforts to explore and document the complexities of an open-ocean ecosystem.",
     imageUrls: ["", "", "", ""],
   },
   "Palearctic Migratory Bird Survey": {
     description:
-      "Objectives: The Palearctic Migratory Bird Survey (1960s), aimed to study the migratory patterns, habitats, and behaviors of bird species across the Palearctic region, which covers Europe, North Africa (mainly Eygpt), and parts of Asia. This survey collected crucial data on bird migration routes, timing, and population changes, contributing to our understanding of avian ecology and conservation efforts.",
+      "The Palearctic Migratory Bird Survey (1960s), aimed to study the migratory patterns, habitats, and behaviors of bird species across the Palearctic region, which covers Europe, North Africa (mainly Eygpt), and parts of Asia. This survey collected crucial data on bird migration routes, timing, and population changes, contributing to our understanding of avian ecology and conservation efforts.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3bde366dfbbd8446688706c66fbf27ea4",
       "https://collections.nmnh.si.edu/media/?irn=15812601",
@@ -165,7 +165,7 @@ const expeditionImages = {
   },
   "Panama Oil Spill Program (POSP)": {
     description:
-      "Objectives: The Panama Oil Spill Program (POSP), initiated in 1986, aimed to study the environmental impact of oil spills in tropical marine ecosystems, particularly around the Panama Canal. The program focused on assessing the effects of oil contamination on marine life, coral reefs, mangroves, and coastal habitats, providing valuable insights into the resilience and recovery of these ecosystems after oil spills",
+      "The Panama Oil Spill Program (POSP), initiated in 1986, aimed to study the environmental impact of oil spills in tropical marine ecosystems, particularly around the Panama Canal. The program focused on assessing the effects of oil contamination on marine life, coral reefs, mangroves, and coastal habitats, providing valuable insights into the resilience and recovery of these ecosystems after oil spills",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3259cb8b9f8654de9a8f4950acff27ae1",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m37ba557b6fe704ada9109c122874e8374",
@@ -175,7 +175,7 @@ const expeditionImages = {
   },
   "South Atlantic Benchmark Program (SABP)": {
     description:
-      "Objectives: In 1977, the South Atlantic Benchmark Program (SABP) aimed to establish a baseline understanding of the marine and coastal ecosystems in the South Atlantic region. The program conducted extensive research on water quality, benthic habitats, and marine biodiversity to monitor the health of these ecosystems. By collecting this benchmark data, the SABP provided essential insights into the impacts of human activities and natural events, helping guide future conservation and management efforts in the South Atlantic coastal and marine environments",
+      "In 1977, the South Atlantic Benchmark Program (SABP) aimed to establish a baseline understanding of the marine and coastal ecosystems in the South Atlantic region. The program conducted extensive research on water quality, benthic habitats, and marine biodiversity to monitor the health of these ecosystems. By collecting this benchmark data, the SABP provided essential insights into the impacts of human activities and natural events, helping guide future conservation and management efforts in the South Atlantic coastal and marine environments",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m347b8a49a9956443db060842d475488ed",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m30bc0ef6d5dc245d89e201fddaee72cf0",
@@ -185,7 +185,7 @@ const expeditionImages = {
   },
   "Smithsonian STRI Panama Survey": {
     description:
-      "Objectives: The Smithsonian Tropical Research Institute (STRI) Panama Survey  aimed to study the biodiversity, ecology, and environmental changes in Panama's diverse ecosystems. This long-term survey, conducted by the STRI, focused on collecting data on various species, their habitats, and the effects of climate change, deforestation, and human activities on tropical ecosystems. The findings from this survey have been crucial in advancing our understanding of tropical biodiversity and guiding conservation efforts in the region.",
+      "The Smithsonian Tropical Research Institute (STRI) Panama Survey  aimed to study the biodiversity, ecology, and environmental changes in Panama's diverse ecosystems. This long-term survey, conducted by the STRI, focused on collecting data on various species, their habitats, and the effects of climate change, deforestation, and human activities on tropical ecosystems. The findings from this survey have been crucial in advancing our understanding of tropical biodiversity and guiding conservation efforts in the region.",
     imageUrls: [
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m390712e32933240cfa1e83ec1a0ff1c7c",
       "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3986ab47c46b24073a66f6a04b7401769",
@@ -717,7 +717,9 @@ function showImageCard(expeditionName) {
   const imageContent = document.getElementById("image-content");
 
   titleElement.textContent = expeditionName;
-  descriptionElement.textContent = expeditionData.description;
+  // descriptionElement.textContent = expeditionData.description;
+  descriptionElement.innerHTML = `<strong>Objectives:</strong><br>${expeditionData.description}`;
+
   imageContent.innerHTML = ""; // Clear existing images
 
   // Check if there are no valid images or if all URLs are either empty or "No Images Found in Collection"
