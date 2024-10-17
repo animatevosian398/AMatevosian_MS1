@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
+    />
+    <title>Textiles of the World: A Study of Material Culture</title>
+    <style>
+      /* Main styles */
+      body {
+        background-color: #f2f1f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+      .sidebar {
+        width: 40px;
+        background-color: #f2f1f0;
+        padding: 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+      h1 {
+        margin-top: 0;
+        color: #333;
+        font-family: "Montserrat";
+      }
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+        gap: 0px;
+        padding: 0px;
+      }
+      .image-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        opacity: 1;
+      }
+      .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.8);
+        cursor: pointer;
+      }
+      #colorGradient {
+        width: 100%;
+        height: 80vh;
+        background: linear-gradient(
+          to bottom,
+          #e63946,
+          #f4a261,
+          #e9c46a,
+          #2a9d8f,
+          #264653,
+          #6d6875,
+          #b5838d
+        );
+        position: relative;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+      }
+      #colorGradient:hover {
+        transform: scale(1.05);
+      }
+      #colorGradient::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        pointer-events: none;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(97, 97, 97, 0.7);
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+      .modal-content {
+        position: relative;
+        background-color: #e2e2e2;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 80%;
+        max-height: 80%;
+        text-align: center;
+      }
+      .modal-content img {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+      }
+      .close-btn {
+        position: absolute;
+        top: 20px; /* Increase top value */
+        right: 20px; /* Increase right value */
+        background-color: transparent;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        z-index: 1001;
+      }
+
+      .close-btn:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .info-overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 15, 15, 0.3);
+        color: #fff;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: left;
+        z-index: 1000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-optical-sizing: auto;
+        border-radius: 10px;
+      }
+      .modal-content:hover .info-overlay {
+        display: block;
+      }
+      .info-item {
+        margin-bottom: 15px;
+      }
+      .info-label {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 4px;
+      }
+      .info-overlay p {
+        font-size: 16px;
+        margin: 0;
+      }
+      .show-all-btn {
+        align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px,
+          rgba(0, 0, 0, 0.15) 0 4px 8px -3px,
+          rgba(255, 255, 255, 0.7) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Montserrat", sans-serif;
+        height: 32px;
+        justify-content: center;
+        line-height: 1;
+        overflow: hidden;
+        padding-left: 12px;
+        padding-right: 12px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow 0.1s, transform 0.1s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+      .show-all-btn:focus {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1.5px inset,
+          rgba(0, 0, 0, 0.2) 0 2px 4px, rgba(0, 0, 0, 0.15) 0 4px 8px -3px,
+          rgba(255, 255, 255, 0.7) 0 -3px 0 inset;
+      }
+      .show-all-btn:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 6px,
+          rgba(0, 0, 0, 0.15) 0 6px 10px -3px,
+          rgba(255, 255, 255, 0.7) 0 -3px 0 inset;
+        transform: translateY(-1px);
+      }
+      .show-all-btn:active {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 7px inset;
+        transform: translateY(1px);
+      }
+      #loadingMessage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        display: block;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div id="colorGradient"></div>
+    </div>
+    <div class="main-content">
+      <h1>Textiles of the World: A Study of Material Culture by Color</h1>
+      <button class="show-all-btn" onclick="showAllImages()">Show All</button>
+      <div id="loadingMessage">0 images are loading...</div>
+      <div class="image-grid" id="imageGrid"></div>
+    </div>
+
+    <!-- Popup Modal for Image -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <img id="modalImage" src="" alt="Expanded Image" />
+
+        <!-- Info overlay div -->
+        <div class="info-overlay" id="infoOverlay">
+          <div class="info-item">
+            <p class="info-label">Place</p>
+            <p id="modalPlace"></p>
+          </div>
+          <div class="info-item">
+            <p class="info-label">Period</p>
+            <p id="modalPeriod"></p>
+          </div>
+          <div class="info-item">
+            <p class="info-label">Description</p>
+            <p id="modalDescription"></p>
+          </div>
+          <div class="info-item">
+            <p class="info-label">Medium</p>
+            <p id="modalMedium"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const dataUrl = "./data/data_NEW.json";
+      const imageGrid = document.getElementById("imageGrid");
+      const imageModal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      const infoOverlay = document.getElementById("infoOverlay");
+      const modalPlace = document.getElementById("modalPlace");
+      const modalPeriod = document.getElementById("modalPeriod");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalMedium = document.getElementById("modalMedium");
+      const loadingMessage = document.getElementById("loadingMessage");
+      const colorThief = new ColorThief();
+      let imageDataArray = [];
+
+      async function loadAndProcessImages() {
+        try {
+          const response = await fetch(dataUrl);
+          const data = await response.json();
+          const imageThumbnails = data.slice(0, 150).map((item) => ({
+            thumbnail: item.image.thumbnail,
+            info: item.info || "No additional information available",
+            place: item.place,
+            period: item.period,
+            description: item.description,
+            medium: item.medium,
+          }));
+
+          const totalImages = imageThumbnails.length;
+          let loadedImages = 0;
+
+          loadingMessage.textContent = `threading ${totalImages} textiles...`;
+
+          for (let {
+            thumbnail,
+            info,
+            place,
+            period,
+            description,
+            medium,
+          } of imageThumbnails) {
+            const divContainer = document.createElement("div");
+            divContainer.className = "image-container";
+
+            const img = new Image();
+            img.crossOrigin = "Anonymous";
+            img.src = thumbnail;
+            img.addEventListener("load", () => {
+              loadedImages++;
+              loadingMessage.textContent = `threading ${loadedImages} of ${totalImages} textiles...`;
+
+              if (loadedImages === totalImages) {
+                loadingMessage.style.display = "none";
+              }
+
+              const rgb = colorThief.getColor(img);
+              const hue = rgbToHue(rgb);
+
+              divContainer.appendChild(img);
+              imageDataArray.push({ divContainer, img, hue });
+              img.addEventListener("click", () =>
+                openModal(thumbnail, { place, period, description, medium })
+              );
+
+              if (imageDataArray.length === totalImages) {
+                showAllImages();
+              }
+            });
+          }
+        } catch (error) {
+          console.error("Error loading or processing textiles:", error);
+        }
+      }
+
+      loadAndProcessImages();
+
+      function rgbToHue([r, g, b]) {
+        r /= 255;
+        g /= 255;
+        b /= 255;
+        const max = Math.max(r, g, b);
+        const min = Math.min(r, g, b);
+        let hue;
+        if (max === min) hue = 0;
+        else if (max === r) hue = (60 * ((g - b) / (max - min)) + 360) % 360;
+        else if (max === g) hue = (60 * ((b - r) / (max - min)) + 120) % 360;
+        else hue = (60 * ((r - g) / (max - min)) + 240) % 360;
+        return hue;
+      }
+
+      function displayImages(images) {
+        imageGrid.innerHTML = "";
+        images.forEach(({ divContainer }) =>
+          imageGrid.appendChild(divContainer)
+        );
+      }
+
+      function filterByColor(color) {
+        const hueRanges = {
+          red: [330, 15],
+          orange: [15, 45],
+          yellow: [45, 75],
+          green: [75, 165],
+          blue: [165, 255],
+          purple: [255, 290],
+          pink: [290, 330],
+          brown: [0, 30],
+          gray: [0, 0],
+        };
+        const [minHue, maxHue] = hueRanges[color] || [0, 360];
+        const filteredImages = imageDataArray.filter(({ hue }) =>
+          minHue <= maxHue
+            ? hue >= minHue && hue < maxHue
+            : hue >= minHue || hue < maxHue
+        );
+        displayImages(filteredImages);
+      }
+
+      function showAllImages() {
+        displayImages(imageDataArray.sort((a, b) => a.hue - b.hue));
+      }
+
+      function openModal(src, { place, period, description, medium }) {
+        modalImage.src = src;
+        modalPlace.textContent = place;
+        modalPeriod.textContent = period;
+        modalDescription.textContent = description;
+        modalMedium.textContent = medium;
+        imageModal.style.display = "flex";
+      }
+
+      function closeModal() {
+        imageModal.style.display = "none";
+      }
+
+      document
+        .getElementById("colorGradient")
+        .addEventListener("click", (event) => {
+          const rect = event.target.getBoundingClientRect();
+          const y = event.clientY - rect.top;
+          const color = [
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "blue",
+            "purple",
+            "pink",
+          ][Math.floor((y / rect.height) * 7)];
+          filterByColor(color);
+        });
+    </script>
+  </body>
+</html>

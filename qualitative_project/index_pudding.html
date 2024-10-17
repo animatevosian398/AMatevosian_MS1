@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Image Square Grid from JSON</title>
+    <style>
+      /* Styling for a compact image grid with no gaps */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(25px, 1fr)
+        ); /* Smaller images */
+        gap: 0; /* No space between images */
+        padding: 0; /* No padding around the grid */
+      }
+      /* Styling each grid cell as a cropped background image */
+      .image-grid div {
+        width: 100%;
+        aspect-ratio: 1; /* Ensures square aspect ratio */
+        overflow: hidden;
+      }
+      .image-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures image fills the container, cropped */
+      }
+      body {
+        background: black;
+        margin: 0; /* Remove body margin to avoid whitespace */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Textile Image Square Grid</h1>
+    <div class="image-grid" id="imageGrid">
+      <!-- Images will be injected here -->
+    </div>
+
+    <script>
+      // Path to your data JSON file
+      const dataUrl = "./data/data_NEW.json";
+
+      // Reference to the grid container
+      const imageGrid = document.getElementById("imageGrid");
+
+      // Fetch the data from the JSON file
+      fetch(dataUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract the first 100 thumbnail URLs from the JSON data
+          const imageThumbnails = data
+            .slice(0, 1000) // Adjust this if you want more or fewer images
+            .map((item) => item.image.thumbnail);
+
+          // Create image elements and append them to the grid
+          imageThumbnails.forEach((thumbnailUrl) => {
+            const divContainer = document.createElement("div");
+
+            const img = document.createElement("img");
+            img.src = thumbnailUrl;
+            img.alt = "Textile Image";
+            divContainer.appendChild(img);
+            imageGrid.appendChild(divContainer);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading JSON data:", error);
+        });
+    </script>
+  </body>
+</html>

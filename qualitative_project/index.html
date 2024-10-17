@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Image Square Grid from JSON</title>
+    <style>
+      /* Styling for a compact image grid with no gaps */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(25px, 1fr)
+        ); /* Smaller images */
+        gap: 0; /* No space between images */
+        padding: 0; /* No padding around the grid */
+      }
+      /* Styling each grid cell as a cropped background image */
+      .image-grid div {
+        /* width: 1rem; */
+
+        /* height: 25px; */
+        overflow: hidden;
+        /* background-size: 150%;
+            background-position: center;
+            background-repeat: no-repeat; */
+      }
+      .image-grid img {
+        /* overflow: clip; */
+        /* position: absolute; */
+        /* width: 1500px; */
+        /* height: 1500px;  */
+        /* left: -50%; */
+        transform: scale(1.5);
+      }
+      body {
+        background: rgb(213, 208, 208);
+        /* background-image: url("/qualitative_project/thread.jpg"); /* Replace with your image path */
+        /* background-size: 20px 20px; 
+        background-repeat: repeat;  */
+        /* background-position: top left;  */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Textile Image Square Grid</h1>
+    <div class="image-grid" id="imageGrid">
+      <!-- Images will be injected here -->
+    </div>
+
+    <script>
+      // Path to your data JSON file
+      const dataUrl = "./data/data_NEW.json";
+
+      // Reference to the grid container
+      const imageGrid = document.getElementById("imageGrid");
+
+      // Fetch the data from the JSON file
+      fetch(dataUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract the first 100 thumbnail URLs from the JSON data
+          const imageThumbnails = data
+            .slice(0, 130) // Adjust this if you want more or fewer images
+            .map((item) => item.image.thumbnail);
+
+          // Create image elements and append them to the grid
+          imageThumbnails.forEach((thumbnailUrl) => {
+            const divContainer = document.createElement("div");
+            divContainer.style.overflow = "hidden"; // Apply overflow hidden to the inner div
+            // Apply random vertical offset directly using JavaScript
+            const offsetValue = (Math.random() - 0.5) * 800; // Random offset between -10 and 10 pixels
+            divContainer.style.transform = `translateY(${offsetValue}px)`;
+
+            const img = document.createElement("img");
+            img.src = thumbnailUrl;
+            img.alt = "Textile Image";
+            imageGrid.appendChild(divContainer);
+            divContainer.appendChild(img);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading JSON data:", error);
+        });
+      const timeout = (ms) =>
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error("Request timed out")), ms)
+        );
+
+      Promise.race([
+        fetch(dataUrl),
+        timeout(50000), // Set timeout to 5 seconds
+      ])
+        .then((response) => response.json())
+        .then((data) => {
+          // Your existing data processing logic here
+        })
+        .catch((error) => {
+          console.error("Error or timeout:", error);
+        });
+    </script>
+  </body>
+</html>

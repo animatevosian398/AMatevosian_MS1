@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Map Image Arrangement</title>
+    <style>
+      /* World map container */
+      .world-map {
+        position: relative;
+        width: 80vw; /* Adjust width as needed */
+        height: auto;
+        margin: 0 auto;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/83/Mercator-projection.jpg"); /* Sample map image */
+        background-size: cover;
+      }
+      .world-map img {
+        position: absolute;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 20px; /* Adjust size as needed */
+        height: 20px; /* Adjust size as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>World Map Image Arrangement</h1>
+    <div class="world-map" id="worldMap">
+      <!-- Images will be injected here -->
+    </div>
+
+    <script>
+      // Sample coordinates (these should be customized for better accuracy)
+      const coordinates = [
+        { x: 20, y: 30 }, // North America
+        { x: 30, y: 40 }, // South America
+        { x: 60, y: 30 }, // Europe
+        { x: 70, y: 40 }, // Africa
+        { x: 80, y: 20 }, // Asia
+        { x: 50, y: 70 }, // Australia
+        { x: 90, y: 10 }, // Russia
+        // Add more coordinates as needed
+      ];
+
+      // Path to your data JSON file
+      const dataUrl = "./data/data_NEW.json";
+
+      // Reference to the container for images
+      const worldMap = document.getElementById("worldMap");
+
+      // Fetch the data from the JSON file
+      fetch(dataUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract thumbnail URLs from JSON data
+          const imageThumbnails = data
+            .slice(0, coordinates.length)
+            .map((item) => item.image.thumbnail);
+
+          // Create image elements and position them based on coordinates
+          imageThumbnails.forEach((thumbnailUrl, index) => {
+            const img = document.createElement("img");
+            img.src = thumbnailUrl;
+            img.alt = "Textile Image";
+
+            // Get corresponding coordinates
+            const { x, y } = coordinates[index];
+            img.style.left = `${x}%`; // Position based on percentage
+            img.style.top = `${y}%`; // Position based on percentage
+
+            worldMap.appendChild(img);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading JSON data:", error);
+        });
+    </script>
+  </body>
+</html>

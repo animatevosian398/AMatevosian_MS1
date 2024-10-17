@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Circle Grid from JSON</title>
+    <style>
+      /* Adjusted styling for tiny image grid without padding */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(20px, 1fr)
+        ); /* Small square size */
+        gap: 0; /* No padding between squares */
+        padding: 0; /* Remove padding around the grid */
+      }
+      .image-grid img {
+        width: 20px; /* Tiny width for each square */
+        height: 20px; /* Tiny height for each square */
+        object-fit: cover; /* Ensures the image covers the circle */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Textile Image Circle Grid</h1>
+    <div class="image-grid" id="imageGrid">
+      <!-- Images will be injected here -->
+    </div>
+
+    <script>
+      // Path to your data JSON file
+      const dataUrl = "./data/data_NEW.json";
+
+      // Reference to the grid container
+      const imageGrid = document.getElementById("imageGrid");
+
+      // Fetch the data from the JSON file
+      fetch(dataUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract the first 20 thumbnail URLs from the JSON data
+          const imageThumbnails = data
+            .slice(0, 2000)
+            .map((item) => item.image.thumbnail);
+
+          // Create image elements and append them to the grid
+          imageThumbnails.forEach((thumbnailUrl) => {
+            const img = document.createElement("img");
+            img.src = thumbnailUrl;
+            img.alt = "Textile Image";
+            imageGrid.appendChild(img);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading JSON data:", error);
+        });
+    </script>
+  </body>
+</html>
