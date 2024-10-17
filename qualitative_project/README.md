@@ -8,3 +8,8 @@
 
 ![alt text](./3a_macro.jpg)
 ![alt text](./3b_micro.jpeg) 3) Images of textiles are clustered based on similarity of description. Micro view includes transparent overlays of the images in a given cluster to create a "composite" fabric view. Description of each textile will be shown on back of image card and images can be lined up in a grid when clicked through.
+
+#Site Screenshots
+![alt text](./SiteScreenshot-redorange.png)
+![alt text](./SiteScreenshot-greenMicro.png)
+![alt text](./micro-green-details.png)
