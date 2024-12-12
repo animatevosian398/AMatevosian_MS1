@@ -30,8 +30,6 @@ Process included
 
 
 
-## Sketches
-[Link to pdf of images](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
 
 
 
