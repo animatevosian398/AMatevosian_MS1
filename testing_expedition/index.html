@@ -17,12 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Chart</title>
+    <title>Visualizing the Yields of Exploration</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
   <body>
+    <div id="sticky-header" class="sticky-header">
+      <h1 class="raleway-title">Visualizing the Yields of Exploration</h1>
+      <h3 class="inter-subtitle">As found in the Museum of Natural History collections</h3>
+    </div>
     <div id="image-container" class="image-container">
-      <h2 class="image-heading">Quantifying the Yields of Exploration</h2>
       <img
         id="page-image"
         class="page-image"
@@ -35,12 +38,7 @@
       </div>
     </div>
 
-    <h1 class="raleway-title" >
-      Quantifying the Yields of Exploration
-    </h1>
-    <h3 class="inter-subtitle">
-      As found in the Museum of Natural History collections
-    </h3>
+   
 
     <div
       id="visualization"
@@ -107,10 +105,7 @@
         time and offering insight into the diversity of material.
       </p>
     </div>
-     <!-- Background Image Citation for the Visualization Container -->
-     <div id="visualization-citation" style="position: absolute; bottom: 5px; right: 10px; background-color: rgba(255, 255, 255, 0.049); padding: 5px; font-size: 12px; font-family: 'Inter', sans-serif; border-radius: 3px; z-index: 3000;">
-      Image: Smithsonian Institution Archives, Science Service Records, Record Unit 7091, Box 409, Folder 2
-    </div>
+    
   </div>
     <div
       id="tooltip"
@@ -123,7 +118,10 @@
         border-radius: 3px;
       "
     ></div>
-
+ <!-- Background Image Citation for the Visualization Container -->
+ <div id="visualization-citation" style="position: absolute; bottom: 5px; right: 10px; background-color: rgba(255, 255, 255, 0.049); padding: 5px; font-size: 12px; font-family: 'Inter', sans-serif; border-radius: 3px; z-index: 3000;">
+  Image: Smithsonian Institution Archives, Science Service Records, Record Unit 7091, Box 409, Folder 2
+</div>
     <script src="viz_Stacked.js"></script>
   </body>
 </html>

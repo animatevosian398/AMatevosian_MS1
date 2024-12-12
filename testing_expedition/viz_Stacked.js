@@ -793,3 +793,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Call the fetchJsonData function to start
 fetchJsonData();
+document.addEventListener("DOMContentLoaded", function () {
+  const citation = document.getElementById("citation");
+  const visualization = document.getElementById("visualization");
+
+  window.addEventListener("scroll", () => {
+    const visualizationRect = visualization.getBoundingClientRect();
+    const viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    // Adjust threshold to hide the citation earlier or later
+    if (visualizationRect.top <= viewportHeight * 0.2) {
+      citation.style.display = "none"; // Hide citation
+    } else {
+      citation.style.display = "block"; // Show citation
+    }
+  });
+});
