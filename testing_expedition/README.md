@@ -21,11 +21,10 @@ Process included
 
    
 
-# Prototype Images
+#  Images
 <img width="1449" alt="Screenshot 2024-12-12 at 12 09 13 AM" src="https://github.com/user-attachments/assets/62289ffc-705f-4a0b-ab17-6aa0ec935f05" />
 <img width="1370" alt="Screenshot 2024-12-12 at 12 07 06 AM" src="https://github.com/user-attachments/assets/ff051964-862d-4242-8fc1-a770b16ac36e" />
 <img width="1433" alt="SCREENSHOT1-expeditions" src="https://github.com/user-attachments/assets/1572590e-8e46-44ef-96d4-1d8641264b40" />
-<img width="1453" alt="Screenshot 2024-12-12 at 12 05 24 AM" src="https://github.com/user-attachments/assets/d705c8c8-2e03-4ec6-af21-e268a2fd3bc0" />
 
 
 
