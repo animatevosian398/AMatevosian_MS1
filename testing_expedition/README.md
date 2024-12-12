@@ -5,7 +5,7 @@ Exploring the Smithsonian’s Open Access data and the Institution's history mad
 
 A stacked bar chart visualizes the diversity of material collected by each expedition, with bar heights representing the quantity of artifacts in specific categories. This chart connects to a vertical timeline, illustrating the progression of expeditions and their contributions over time. Upon selecting an expedition, users see information about its goals and a snapshot of images showcasing collected artifacts, enabling comparisons and assessments of how well the expedition met its objectives. By combining visualizations, images, and quantitative analysis, this project offers a dynamic view of the interplay between history, science, and preservation, illuminating underrepresented aspects of expeditionary contributions.
 
-##GitHub Live Page
+## GitHub Live Page
 [Link](https://animatevosian398.github.io/AMatevosian_MS1/testing_expedition/index.html)
 ## Screen Recording 
 [Link](https://drive.google.com/file/d/1IuPH4320o5XOJE1jDllVh0sPh39W5jSO/view?usp=sharing)
