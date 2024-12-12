@@ -1,3 +1,7 @@
+##Sketches for Quantitative Project
+## Sketches
+[Link to pdf of images](https://github.com/user-attachments/files/16972172/Sketches_pdf.pdf)
+
 ## 1- Foraminifera (“Forams”) at the Smithsonian: Visualizing the World’s Largest Foram Collection
 
 The Smithsonian has about 16,000 primary type specimens of foraminifera (and over 200,000 secondary types) serving as the world’s largest repository, with the Cushman Collection being the most notable. Foraminifera (“forams” for short) are microfossils storing incredible amounts of data. Their shells tell us about past ocean conditions, from temperature to acidity and salinity. 
