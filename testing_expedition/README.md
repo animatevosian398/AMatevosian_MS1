@@ -1,14 +1,12 @@
 ## MS 1 
 ## Exploring Expeditions
 
-Exploring the Smithsonian’s material and history made me wonder where specimens like corals or fossils came from. Here, I investigate the following questions:
-- Which scientific expeditions yielded the most specimens, artifacts, and records?
-- What categories do those materials belong to (botany, fossils/paleontology, archival material, seeds)?
-- Which expeditions are less focused on or underrepresented?
-- From which expedition does the Smithsonian hold the most archival material?
+Exploring the Smithsonian’s Open Access data and the Institution's history made me wonder where specimens like corals or fossils came from and how they got to their current holding museum in DC. This project investigates the contributions of scientific expeditions to the Smithsonian’s collections, exploring questions such as: Which expeditions yielded the most specimens, artifacts, and archival materials? What categories do these materials belong to (e.g., fossils, botany, minerals)? Using a quantitative dataset, it highlights the diversity of artifacts collected by expeditions like the U.S. Exploring Expedition (1838–1842), which yielded hundreds of specimens across vertebrate zoology, invertebrate zoology, botany, and more.
 
-A micro-exploration could zoom in within a category to see the biodiversity of plants collected on an expedition. The quantitative dataset includes the number of artifacts in object types like “plants” for a given expedition. For example, the notable U.S. Exploring Expedition from 1838 yielded: 284 results for NMNH Vertebrate Zoology - Birds, 369 for NMNH Invertebrate Zoology Dept, 6 for Herpetology, 1 in Mammals, and 8 in Botany. A stacked bar chart will display the diversity of material that the Smithsonian collected around each expedition and the contributions these expeditions made. The bar heights will show the number of artifacts in each category, allowing for comparisons among expeditions. 
+A stacked bar chart visualizes the diversity of material collected by each expedition, with bar heights representing the quantity of artifacts in specific categories. This chart connects to a vertical timeline, illustrating the progression of expeditions and their contributions over time. Upon selecting an expedition, users see information about its goals and a snapshot of images showcasing collected artifacts, enabling comparisons and assessments of how well the expedition met its objectives. By combining visualizations, images, and quantitative analysis, this project offers a dynamic view of the interplay between history, science, and preservation, illuminating underrepresented aspects of expeditionary contributions.
 
+##GitHub Live Page
+[Link](https://animatevosian398.github.io/AMatevosian_MS1/testing_expedition/index.html)
 ## Screen Recording 
 [Link](https://drive.google.com/file/d/1IuPH4320o5XOJE1jDllVh0sPh39W5jSO/view?usp=sharing)
 ## Exploring Expeditions Process 
