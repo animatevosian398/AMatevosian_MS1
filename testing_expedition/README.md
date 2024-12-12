@@ -1,11 +1,32 @@
-## MS 1
-#Prototype Images
+## MS 1 
+## Exploring Expeditions
+
+Exploring the Smithsonian’s material and history made me wonder where specimens like corals or fossils came from. Here, I investigate the following questions:
+- Which scientific expeditions yielded the most specimens, artifacts, and records?
+- What categories do those materials belong to (botany, fossils/paleontology, archival material, seeds)?
+- Which expeditions are less focused on or underrepresented?
+- From which expedition does the Smithsonian hold the most archival material?
+
+A micro-exploration could zoom in within a category to see the biodiversity of plants collected on an expedition. The quantitative dataset includes the number of artifacts in object types like “plants” for a given expedition. For example, the notable U.S. Exploring Expedition from 1838 yielded: 284 results for NMNH Vertebrate Zoology - Birds, 369 for NMNH Invertebrate Zoology Dept, 6 for Herpetology, 1 in Mammals, and 8 in Botany. A stacked bar chart will display the diversity of material that the Smithsonian collected around each expedition and the contributions these expeditions made. The bar heights will show the number of artifacts in each category, allowing for comparisons among expeditions. 
+
+## Exploring Expeditions Process 
+(Link)[https://docs.google.com/spreadsheets/d/16QyoU5pXi25KyBFgINcCdsgFQZ_5GubsRPRdHZ4W134/edit?gid=0#gid=0] to Data Management and Data Tracker which stores the results and initial analysis of searching the term "expedition" across museum units.
+Process included
+1) Initial Researching with Expeditions were High Yielding
+2) getting lists of expedition names in each unit
+2) create an object and sorting them by their count
+3) repeating for each unit
+4) picking the top yielding expeditions over time
+5) Selecting images for each expedition
+
+   
+
+# Prototype Images
 
 
 <img width="1409" alt="prototypeImage_3" src="https://github.com/user-attachments/assets/2805563c-06ee-4090-bf46-b01100722dbe">
 <img width="1329" alt="PrototypeImage_2" src="https://github.com/user-attachments/assets/eb2d3a67-e919-4975-a1c6-1d22b6e1c301">
 <img width="1393" alt="prototypeImage_1" src="https://github.com/user-attachments/assets/273370c1-5a60-4a7f-8d2b-e24a3f51453e">
-
 
 
 
