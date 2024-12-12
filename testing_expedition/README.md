@@ -9,8 +9,10 @@ Exploring the Smithsonian’s material and history made me wonder where specimen
 
 A micro-exploration could zoom in within a category to see the biodiversity of plants collected on an expedition. The quantitative dataset includes the number of artifacts in object types like “plants” for a given expedition. For example, the notable U.S. Exploring Expedition from 1838 yielded: 284 results for NMNH Vertebrate Zoology - Birds, 369 for NMNH Invertebrate Zoology Dept, 6 for Herpetology, 1 in Mammals, and 8 in Botany. A stacked bar chart will display the diversity of material that the Smithsonian collected around each expedition and the contributions these expeditions made. The bar heights will show the number of artifacts in each category, allowing for comparisons among expeditions. 
 
+## Screen Recording 
+[Link](https://drive.google.com/file/d/1IuPH4320o5XOJE1jDllVh0sPh39W5jSO/view?usp=sharing)
 ## Exploring Expeditions Process 
-(Link)[https://docs.google.com/spreadsheets/d/16QyoU5pXi25KyBFgINcCdsgFQZ_5GubsRPRdHZ4W134/edit?gid=0#gid=0] to Data Management and Data Tracker which stores the results and initial analysis of searching the term "expedition" across museum units.
+[Link](https://docs.google.com/spreadsheets/d/16QyoU5pXi25KyBFgINcCdsgFQZ_5GubsRPRdHZ4W134/edit?gid=0#gid=0) to Data Management and Data Tracker which stores the results and initial analysis of searching the term "expedition" across museum units.
 Process included
 1) Initial Researching with Expeditions were High Yielding
 2) getting lists of expedition names in each unit
@@ -22,11 +24,10 @@ Process included
    
 
 # Prototype Images
-
-
-<img width="1409" alt="prototypeImage_3" src="https://github.com/user-attachments/assets/2805563c-06ee-4090-bf46-b01100722dbe">
-<img width="1329" alt="PrototypeImage_2" src="https://github.com/user-attachments/assets/eb2d3a67-e919-4975-a1c6-1d22b6e1c301">
-<img width="1393" alt="prototypeImage_1" src="https://github.com/user-attachments/assets/273370c1-5a60-4a7f-8d2b-e24a3f51453e">
+<img width="1449" alt="Screenshot 2024-12-12 at 12 09 13 AM" src="https://github.com/user-attachments/assets/62289ffc-705f-4a0b-ab17-6aa0ec935f05" />
+<img width="1370" alt="Screenshot 2024-12-12 at 12 07 06 AM" src="https://github.com/user-attachments/assets/ff051964-862d-4242-8fc1-a770b16ac36e" />
+<img width="1433" alt="SCREENSHOT1-expeditions" src="https://github.com/user-attachments/assets/1572590e-8e46-44ef-96d4-1d8641264b40" />
+<img width="1453" alt="Screenshot 2024-12-12 at 12 05 24 AM" src="https://github.com/user-attachments/assets/d705c8c8-2e03-4ec6-af21-e268a2fd3bc0" />
 
 
 
